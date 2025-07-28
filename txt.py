@@ -6,7 +6,7 @@ tokenizer = T5Tokenizer.from_pretrained(model_name)
 model = T5ForConditionalGeneration.from_pretrained(model_name)
 
 # Input text (you can modify this for any task)
-input_text = "translate English to French: The house is wonderful."
+input_text = input()
 
 # Tokenize input
 inputs = tokenizer.encode(input_text, return_tensors="pt")
